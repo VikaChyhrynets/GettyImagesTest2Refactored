@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ee3aee5-ee10-4fa4-8c2b-73fba7a0649c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gettyimages2/refactored/GettyImagesPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gettyimages2/refactored/GettyImagesWebDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/gettyimages2/refactored/GettyImagesWebDriverTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/logback-test.xml" afterDir="false" />
+    <list default="true" id="3ee3aee5-ee10-4fa4-8c2b-73fba7a0649c" name="Changes" comment="getty images tests refactored">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gettyimages2/refactored/GettyImagesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gettyimages2/refactored/GettyImagesPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +112,14 @@
       <option name="presentableId" value="Default" />
       <updated>1656923577094</updated>
     </task>
+    <task id="LOCAL-00001" summary="getty images tests refactored">
+      <created>1656971477029</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656971477029</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,5 +132,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="getty images tests refactored" />
+    <option name="LAST_COMMIT_MESSAGE" value="getty images tests refactored" />
   </component>
 </project>

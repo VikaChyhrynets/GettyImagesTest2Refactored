@@ -11,7 +11,7 @@ public class GettyImagesPage {
 
     private WebDriver driver;
 
-    private int timeOutSec = 1000;
+    private int timeOutMillis = 1000;
 
     // Test1 - authorization
     @FindBy(how = How.XPATH, using = "//*[@id=\"onetrust-close-btn-container\"]/button")
@@ -48,6 +48,9 @@ public class GettyImagesPage {
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"react_buy_card\"]/div/div/div[3]/div[1]/button")
     private WebElement addToCartButton;
+
+    @FindBy(how = How.XPATH, using = "//*[@id=\"react_buy_card\"]/div/div/div[3]/div[2]/div/button")
+    private WebElement addToCartButtonWindow;
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"site-top-header-wrapper\"]/header-side-panels/div[4]/div[1]")
     private WebElement menuButton;
@@ -97,7 +100,7 @@ public class GettyImagesPage {
     }
 
     public GettyImagesPage closeCookies() throws InterruptedException {
-        Thread.sleep(timeOutSec);
+        Thread.sleep(timeOutMillis);
         closeCookiesButton.click();
         return this;
     }
@@ -108,7 +111,7 @@ public class GettyImagesPage {
     }
 
     public GettyImagesPage signIn() throws InterruptedException {
-        Thread.sleep(timeOutSec);
+        Thread.sleep(timeOutMillis);
         newSessionButton.click();
         return this;
     }
@@ -136,7 +139,7 @@ public class GettyImagesPage {
 
 
     public GettyImagesPage closeVisualGPSInsightsButton() throws InterruptedException {
-        Thread.sleep(timeOutSec);
+        Thread.sleep(timeOutMillis);
         visualGPSInsightsButton.click();
         return this;
     }
@@ -146,7 +149,7 @@ public class GettyImagesPage {
     }
 
     public GettyImagesPage creativePhotosSelectionClick() throws InterruptedException {
-        Thread.sleep(timeOutSec);
+        Thread.sleep(timeOutMillis);
         creativeButton.click();
         return this;
     }
@@ -158,7 +161,7 @@ public class GettyImagesPage {
     }
 
     public GettyImagesPage selectPrice() throws InterruptedException {
-        Thread.sleep(timeOutSec);
+        Thread.sleep(timeOutMillis);
         priceButton.click();
         return this;
     }
@@ -178,7 +181,7 @@ public class GettyImagesPage {
     }
 
     public GettyImagesPage backToCreativeButtonClick() throws InterruptedException {
-        Thread.sleep(timeOutSec);
+        Thread.sleep(timeOutMillis);
         backToSelectionButton.click();
         return this;
     }
@@ -188,13 +191,14 @@ public class GettyImagesPage {
         return this;
     }
 
-    public GettyImagesPage viewCartClick() {
+    public GettyImagesPage viewCartClick() throws InterruptedException {
+        Thread.sleep(timeOutMillis);
         viewCartButton.click();
         return this;
     }
 
     public GettyImagesPage clearCartClick() throws InterruptedException {
-        Thread.sleep(timeOutSec);
+        Thread.sleep(timeOutMillis);
         deletePicture1Button.click();
         deletePicturesButton.click();
         return this;
@@ -224,13 +228,14 @@ public class GettyImagesPage {
                 break;
             }
         }
-        Thread.sleep(timeOutSec);
-        addToCartButton.click();
+        Thread.sleep(timeOutMillis*5);
+        addToCartButtonWindow.click();
         driver.switchTo().window(originalWindow);
         return this;
     }
 
-    public GettyImagesPage removePicture3(){
+    public GettyImagesPage removePicture3() throws InterruptedException {
+        Thread.sleep(timeOutMillis);
         deletePicturesButton.click();
         return this;
     }
